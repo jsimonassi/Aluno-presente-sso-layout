@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno Presente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="./assets/logoBlue.png" alt="logo" width="120px"/>
+        <h3>Faça seu login</h3>
+        <div name="login" class="formContent">
+            <label for="input_email">E-mail</label>
+            <input type="text" id="input_email" placeholder="email@id.uff.br" class="inputText">
+            <span class="emailError" id="emailError">Digite seu e-mail!</span>
+            <br/>
+            <label for="input_password">Senha</label>
+            <input type="password" id="input_password" placeholder="Senha123" class="inputText">
+            <span class="passwordError" id="passwordError">Digite sua senha!</span>
+            <div class="footerInfos">
+                <button class="loginBtn" onclick="doLogin()">Entrar</button>
+                <a href="#" class="forgotPassword">Esqueci minha senha</a>
+            </div>
+        </form>
+</body>
+
+<script src="script.js"></script>
+
+</html>
