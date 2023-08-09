@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno Presente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="pageContent">
+        <div class="genericContainer">
+            <h3>Nova conta</h3>
+            <div name="login" class="formContent">
+                <label for="input_name">Nome:</label>
+                <input type="text" id="input_name" placeholder="Aluno da Silva Ferreira" class="inputText">
+                <span class="msgError" id="emailError">Digite seu nome!</span>
+                <br/>
+                <label for="input_email">E-mail:</label>
+                <input type="text" id="input_email" placeholder="email@id.uff.br" class="inputText">
+                <span class="msgError" id="emailError">Digite um e-mail válido!</span>
+                <br/>
+                <label for="input_password">Senha:</label>
+                <input type="password" id="input_password" placeholder="Senha123" class="inputText">
+                <span class="msgError" id="passwordError">Digite sua senha!</span>
+                <br/>
+                <label for="input_confirm_password">Confirmar senha:</label>
+                <input type="password" id="input_password" placeholder="Senha123" class="inputText">
+                <span class="msgError" id="passwordError">Digite sua senha!</span>
+                <br/>
+                <div class="footerInfos">
+                    <button class="loginBtn" onclick="recoverPassword()">Cadastrar</button>
+                    <a href="./index.html">Voltar ao login</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

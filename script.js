@@ -1,4 +1,8 @@
-
+const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
 
 const doLogin = () => {
     let email = document.getElementById('input_email').value;
@@ -6,7 +10,7 @@ const doLogin = () => {
 
     let allRight = true;
 
-    if(email == '') {
+    if(!validateEmail(email)) {
         document.getElementById('input_email').style.border = '1px solid rgb(171, 11, 11)';
         document.getElementById('emailError').style.display = 'block';
         allRight = false;
@@ -29,4 +33,20 @@ const doLogin = () => {
     }
 
     alert(`Email: ${email} Password: ${password}`);
+}
+
+
+const recoverPassword = () => {
+    let email = document.getElementById('input_email').value;
+
+    if(!validateEmail(email)) {
+        document.getElementById('input_email').style.border = '1px solid rgb(171, 11, 11)';
+        document.getElementById('emailError').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('input_email').style.border = 'none';
+        document.getElementById('emailError').style.display = 'none';
+    }
+
+    alert(`Email: ${email}`);
 }
