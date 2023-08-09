@@ -9,22 +9,30 @@
 </head>
 
 <body>
+    <div class="descriptionBox">
+        <img src="./assets/images/teatcher.png" alt="logo" width="200px" />
+        <div>
+            <h1>Aluno Presente</h1>
+            <p>O <b>Aluno Presente</b> facilita seu controle de frequência e reúne em um só lugar tudo sobre a participação dos seus alunos.</p>
+        </div>
+    </div>
     <div class="container">
-        <img src="./assets/logoBlue.png" alt="logo" width="120px"/>
+        <img src="./assets/images/logoBlue.png" alt="logo" width="120px" />
         <h3>Faça seu login</h3>
         <div name="login" class="formContent">
             <label for="input_email">E-mail</label>
             <input type="text" id="input_email" placeholder="email@id.uff.br" class="inputText">
             <span class="emailError" id="emailError">Digite seu e-mail!</span>
-            <br/>
+            <br />
             <label for="input_password">Senha</label>
             <input type="password" id="input_password" placeholder="Senha123" class="inputText">
             <span class="passwordError" id="passwordError">Digite sua senha!</span>
             <div class="footerInfos">
                 <button class="loginBtn" onclick="doLogin()">Entrar</button>
-                <a href="#" class="forgotPassword">Esqueci minha senha</a>
+                <a href="./recoverPassword.html">Esqueci minha senha</a>
+                <small>Não tem uma conta? <a href="./newAccount.html">Cadastre-se!</a></small>
             </div>
-        </form>
+        </div>
 </body>
 
 <script src="script.js"></script>

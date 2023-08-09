@@ -1,12 +1,28 @@
+@font-face {
+    font-family: "Bold";   /*Can be any text*/
+    src: local("Nunito-Bold"), url("./assets/fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Normal";   /*Can be any text*/
+    src: local("Nunito-Regular"), url("./assets/fonts/Nunito-Regular.ttf") format("truetype");
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(47, 65, 83);
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     height: 100vh;
+    font-family: "Normal";
+}
+
+h1, h3 {
+    font-family: "Bold";
 }
 
 
@@ -16,7 +32,8 @@ html, body {
     align-items: center;
     justify-content: center;
     max-height: 500px;
-    width: 23vw;
+    min-width: 250px;
+    width: 70vw;
     max-width: 400px;
     background-color: rgb(255, 255, 255);
     border-radius: 32px;
@@ -24,11 +41,38 @@ html, body {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
 }
 
-/* TODO: Replace media queries for support multiple devices */
-/* TODO: Add desktop layout */
-@media screen and (max-width: 1000px) {
+.descriptionBox {
+    display: none;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 1024px) {
+
+    html{
+        justify-content: flex-start;
+    }
+
+    .descriptionBox {
+        display: flex;
+        width: 50vw;
+        margin-left: 10vw;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    .descriptionBox div {
+        margin-left: 30px;
+    }
+
     .container {
-        width: 80vw;
+        width: 23vw;
+        max-height: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 16px 0px 0px 16px;
     }
 }
 
@@ -96,13 +140,18 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 85%;
 }
 
 .footerInfos a {
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(47, 65, 83);
-    opacity: 1;
+    margin-top: 15px;
+}
+
+.footerInfos small {
+    font-size: 14px;
+    color: rgb(47, 65, 83);
     margin-top: 15px;
 }
 
