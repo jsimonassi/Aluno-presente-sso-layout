@@ -15,22 +15,22 @@
             <div name="login" class="formContent">
                 <label for="input_name">Nome:</label>
                 <input type="text" id="input_name" placeholder="Aluno da Silva Ferreira" class="inputText">
-                <span class="msgError" id="emailError">Digite seu nome!</span>
+                <span class="msgError" id="name_error">Digite seu nome!</span>
                 <br/>
                 <label for="input_email">E-mail:</label>
                 <input type="text" id="input_email" placeholder="email@id.uff.br" class="inputText">
-                <span class="msgError" id="emailError">Digite um e-mail válido!</span>
+                <span class="msgError" id="email_error">Digite um e-mail válido!</span>
                 <br/>
                 <label for="input_password">Senha:</label>
                 <input type="password" id="input_password" placeholder="Senha123" class="inputText">
-                <span class="msgError" id="passwordError">Digite sua senha!</span>
+                <span class="msgError" id="password_error">Digite sua senha!</span>
                 <br/>
                 <label for="input_confirm_password">Confirmar senha:</label>
-                <input type="password" id="input_password" placeholder="Senha123" class="inputText">
-                <span class="msgError" id="passwordError">Digite sua senha!</span>
+                <input type="password" id="input_password_confirmation" placeholder="Senha123" class="inputText">
+                <span class="msgError" id="password_confirmation_error">A senha e a confirmação de senha devem ser iguais.</span>
                 <br/>
                 <div class="footerInfos">
-                    <button class="loginBtn" onclick="recoverPassword()">Cadastrar</button>
+                    <button class="loginBtn" onclick="signUp()">Cadastrar</button>
                     <a href="./index.html">Voltar ao login</a>
                 </div>
             </div>
