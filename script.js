@@ -104,3 +104,7 @@ const signUp = () => {
 
     alert(`Email: ${email} Password: ${password}`);
 }
+
+const checkPermissions = () => {
+    alert('OK');
+}

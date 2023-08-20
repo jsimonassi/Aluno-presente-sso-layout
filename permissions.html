@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno Presente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="pageContent">
+        <div class="genericContainer">
+            <h3>Permissões</h3>
+            <div name="login" class="formContent">
+                <p>O APP aluno presente precisa das seguintes permissões para acessar seus dados e garantir a atualização da frequência:</p>
+                <label class="checkboxContainer">Veja dados sobre o seu perfil (Obrigatório).
+                    <input type="checkbox" value="profile" checked disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <div class="footerInfos">
+                    <button class="loginBtn" onclick="checkPermissions()">Autorizar</button>
+                    <a href="./index.html">Cancelar</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
